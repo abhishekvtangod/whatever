@@ -24,16 +24,12 @@ const Footer = props => {
         &copy;{' '}
         <Link
           component="a"
-          href="https://devias.io/"
+          href="https://piyushmehta.com"
           target="_blank"
         >
-          Devias IO
+          Team Whatever
         </Link>
         . 2019
-      </Typography>
-      <Typography variant="caption">
-        Created with love for the environment. By designers and developers who
-        love to work together in offices!
       </Typography>
     </div>
   );
