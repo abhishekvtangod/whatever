@@ -1,17 +1,22 @@
 import falcon
+import pandas as pd
 
-class QuoteResource:
-    def on_get(self, req, resp):
-        """Handles GET requests"""
-        quote = {
-            'quote': (
-                "I've always been more interested in "
-                "the future than in the past."
-            ),
-            'author': 'Grace Hopper'
-        }
 
-        resp.media = quote
+def check():
+    data_frame = pd.read_csv("raw_final.csv")
+    print(data_frame)
 
-api = falcon.API()
-api.add_route('/quote', QuoteResource())
+
+check()
+
+# class QuoteResource:
+#     def on_get(self, req, resp):
+#         """Handles GET requests"""
+#         quote = {
+#         }
+
+#         resp.media = quote
+
+
+# api = falcon.API()
+# api.add_route('/quote', QuoteResource())
