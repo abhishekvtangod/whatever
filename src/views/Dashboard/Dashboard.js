@@ -30,18 +30,18 @@ const Dashboard = () => {
       >
         <Grid
           item
-          lg={3}
+          lg={6}
           sm={6}
-          xl={3}
+          xl={6}
           xs={12}
         >
           <Budget />
         </Grid>
         <Grid
           item
-          lg={3}
+          lg={6}
           sm={6}
-          xl={3}
+          xl={6}
           xs={12}
         >
           <TotalUsers />
