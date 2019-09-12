@@ -30,3 +30,13 @@ class Vehicle:
             return 1
         else:
             return 0
+
+def profit_calc(vehicle_name,bill): #2nd parameter is bill value
+    if vehicle_name=="TATA ACE":
+        profit = bill - 1500
+        return profit
+    elif vehicle_name=="BIKE":
+        profit = bill - 600
+        return profit
+    else:
+        return 0
