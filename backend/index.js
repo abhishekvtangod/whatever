@@ -2,9 +2,11 @@ var express = require('express');
 var bodyParser = require('body-parser');
 const fs = require('fs');
 var fileOutputName = require('./data.json');
+var cors = require('cors');
 
 var app = express();
 // configure body parser
+app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
