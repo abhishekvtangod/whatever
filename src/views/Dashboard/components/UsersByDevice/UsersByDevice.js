@@ -7,14 +7,9 @@ import {
   Card,
   CardHeader,
   CardContent,
-  IconButton,
   Divider,
   Typography
 } from '@material-ui/core';
-import LaptopMacIcon from '@material-ui/icons/LaptopMac';
-import PhoneIphoneIcon from '@material-ui/icons/PhoneIphone';
-import RefreshIcon from '@material-ui/icons/Refresh';
-import TabletMacIcon from '@material-ui/icons/TabletMac';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -58,7 +53,7 @@ const UsersByDevice = props => {
         hoverBorderColor: theme.palette.white
       }
     ],
-    labels: ['Desktop', 'Tablet', 'Mobile']
+    labels: ['OnGoing', 'Pending', 'Fulfilled']
   };
 
   const options = {
@@ -85,21 +80,18 @@ const UsersByDevice = props => {
 
   const devices = [
     {
-      title: 'Desktop',
+      title: 'OnGoing',
       value: '63',
-      icon: <LaptopMacIcon />,
       color: theme.palette.primary.main
     },
     {
-      title: 'Tablet',
+      title: 'Pending',
       value: '15',
-      icon: <TabletMacIcon />,
       color: theme.palette.error.main
     },
     {
-      title: 'Mobile',
+      title: 'Fulfilled',
       value: '23',
-      icon: <PhoneIphoneIcon />,
       color: theme.palette.warning.main
     }
   ];
@@ -109,14 +101,7 @@ const UsersByDevice = props => {
       {...rest}
       className={clsx(classes.root, className)}
     >
-      <CardHeader
-        action={
-          <IconButton size="small">
-            <RefreshIcon />
-          </IconButton>
-        }
-        title="Users By Device"
-      />
+      <CardHeader title="Users By Device" />
       <Divider />
       <CardContent>
         <div className={classes.chartContainer}>

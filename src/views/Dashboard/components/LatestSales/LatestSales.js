@@ -11,7 +11,6 @@ import {
   Divider,
   Button
 } from '@material-ui/core';
-import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 
 import { data, options } from './chart';
@@ -37,17 +36,7 @@ const LatestSales = props => {
       {...rest}
       className={clsx(classes.root, className)}
     >
-      <CardHeader
-        action={
-          <Button
-            size="small"
-            variant="text"
-          >
-            Last 7 days <ArrowDropDownIcon />
-          </Button>
-        }
-        title="Latest Sales"
-      />
+      <CardHeader title="Today's Sales" />
       <Divider />
       <CardContent>
         <div className={classes.chartContainer}>

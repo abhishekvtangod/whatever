@@ -14,6 +14,7 @@ import {
 } from './components';
 import OrdersFullfilled from './components/TotalProfit/OrdersFulfilled/OrdersFulfilled';
 import OrdersOngoing from './components/TotalProfit/OrdersOngoing/OrdersOngoing';
+import OrdersPending from './components/TotalProfit/OrdersPending/OrdersPending';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -68,21 +69,30 @@ const Dashboard = () => {
         </Grid>
         <Grid
           item
-          lg={3}
-          sm={3}
-          xl={3}
+          lg={4}
+          sm={4}
+          xl={4}
           xs={12}
         >
           <OrdersFullfilled />
         </Grid>
         <Grid
           item
-          lg={3}
-          sm={3}
-          xl={3}
+          lg={4}
+          sm={4}
+          xl={4}
           xs={12}
         >
           <OrdersOngoing />
+        </Grid>
+        <Grid
+          item
+          lg={4}
+          sm={4}
+          xl={4}
+          xs={12}
+        >
+          <OrdersPending />
         </Grid>
         <Grid
           item
