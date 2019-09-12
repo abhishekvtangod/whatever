@@ -39,4 +39,21 @@ def profit_calc(vehicle_name,bill): #2nd parameter is bill value
         profit = bill - 600
         return profit
     else:
-        return 0
+        return False
+
+time = 10.00                         # initial time is 10am
+
+def delivery_time(time1):           # 10 min of delivery time
+    return time1 + .166              
+
+def time_calc(vehicle_name,distance):  #get distance from API
+    if vehicle_name=="TATA ACE":
+        time = distance/20             # distance in km
+        delivery_time(time)            # add delivery time
+        return time
+    elif vehicle_name=="BIKE":
+        time = distance/30
+        delivery_time(time)
+        return time
+    else:
+        return False
