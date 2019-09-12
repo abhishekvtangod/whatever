@@ -63,7 +63,7 @@ const Budget = props => {
             >
               Vehicles free
             </Typography>
-            <Typography variant="h3">13</Typography>
+            <Typography variant="h3">1</Typography>
           </Grid>
           <Grid item>
             <Avatar className={classes.avatar}>
