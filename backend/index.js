@@ -2,6 +2,7 @@ var express = require('express');
 var bodyParser = require('body-parser');
 const csv = require('csv-parser');
 const fs = require('fs');
+const csvToJson = require('convert-csv-to-json');
 
 var app = express();
 // configure body parser
@@ -12,6 +13,9 @@ var port = process.env.PORT || 8080; // set our port
 
 // create our router
 var router = express.Router();
+var fileInputName = 'S.csv'; 
+var fileOutputName = 'data.json';
+csvToJson.generateJsonFileFromCsv(fileInputName,fileOutputName);
 
 fs.createReadStream('S.csv')
   .pipe(csv())
