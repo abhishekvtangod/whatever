@@ -27,9 +27,10 @@ const Profile = props => {
   const classes = useStyles();
 
   const user = {
-    name: 'Shen Zhi',
-    avatar: '/images/avatars/avatar_11.png',
-    bio: 'Brain Director'
+    name: 'Iswaram marketing',
+    avatar:
+      'https://cdn2.iconfinder.com/data/icons/people-around-the-world/512/09-512.png',
+    bio: 'RS: 41A237'
   };
 
   return (

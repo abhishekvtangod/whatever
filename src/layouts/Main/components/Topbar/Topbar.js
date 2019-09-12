@@ -7,6 +7,7 @@ import { AppBar, Toolbar, Badge, Hidden, IconButton } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import NotificationsIcon from '@material-ui/icons/NotificationsOutlined';
 import InputIcon from '@material-ui/icons/Input';
+import { Typography as MuiTypography } from '@material-ui/core';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -34,10 +35,12 @@ const Topbar = props => {
     >
       <Toolbar>
         <RouterLink to="/">
-          <img
-            alt="Logo"
-            src="/images/logos/logo--white.svg"
-          />
+          <MuiTypography
+            style={{ color: '#fff', fontFamily: '' }}
+            variant="h3"
+          >
+            Whatever
+          </MuiTypography>
         </RouterLink>
         <div className={classes.flexGrow} />
         <Hidden mdDown>
