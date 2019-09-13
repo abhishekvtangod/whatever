@@ -62,7 +62,18 @@ const PendingTasks = props => {
             >
               Pending Tasks{' '}
             </Typography>
-            <Typography variant="h3">""</Typography>
+            <Typography
+              color="textSecondary"
+              variant="h4"
+            >
+              Date of Delivery: 1_11_2018
+            </Typography>
+            <Typography
+              color="textSecondary"
+              variant="h4"
+            >
+              No of Fullfilled Tasks: 89{' '}
+            </Typography>{' '}
           </Grid>
         </Grid>
       </CardContent>

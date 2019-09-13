@@ -62,7 +62,18 @@ const OnGoingTasks = props => {
             >
               On Going Tasks{' '}
             </Typography>
-            <Typography variant="h3">""</Typography>
+            <Typography
+              color="textSecondary"
+              variant="h4"
+            >
+              Date of Delivery: 2_11_2018
+            </Typography>
+            <Typography
+              color="textSecondary"
+              variant="h4"
+            >
+              No of Fullfilled Tasks: 94{' '}
+            </Typography>{' '}
           </Grid>
         </Grid>
       </CardContent>

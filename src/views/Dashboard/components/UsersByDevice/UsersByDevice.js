@@ -101,7 +101,7 @@ const UsersByDevice = props => {
       {...rest}
       className={clsx(classes.root, className)}
     >
-      <CardHeader title="Users By Device" />
+      <CardHeader title="Overview" />
       <Divider />
       <CardContent>
         <div className={classes.chartContainer}>
