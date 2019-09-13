@@ -32,7 +32,6 @@ let godownLat = 12.967195;
 let godownlon = 80.127865;
 router.get('/distance-cal', function(req, res) {
   let address;
-
   axios
     .get(
       `https://maps.googleapis.com/maps/api/geocode/json?address=${req.query.lat},${req.query.long}&key=AIzaSyCfQ0EjpxAe8P7UBFtQ74kxZIRZsEyL4G4`
